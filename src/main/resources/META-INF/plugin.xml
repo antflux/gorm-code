@@ -1,0 +1,48 @@
+<idea-plugin>
+  <id>org.fruip.helper.GenerateModelAction</id>
+  <name>Gorm Code Generate</name>
+  <version>1.0</version>
+  <vendor email="nesocks@163.com" url="http://github.com/jsonlion">Fruip.P</vendor>
+
+  <description>
+    <![CDATA[
+      <h1>Gorm Code Generate</h1>
+              ORM code helper for go language, it can generate model struct by creating sql statement. This plugins can be used with versions 2019.1-2020.1.
+
+    ]]>
+  </description>
+
+  <change-notes>
+    <![CDATA[
+      <b>1.0.0</b>
+        <ul>
+          <li>Initial release. this is the first submit</li>
+        </ul>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+  <depends>com.intellij.modules.platform</depends>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+
+  <actions>
+
+    <action id="generateModelActionId" class="org.fruip.helper.GenerateModelAction" text="Generate Model"
+            description="Generate golang model">
+      <keyboard-shortcut first-keystroke="control G" keymap="$default"/>
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>

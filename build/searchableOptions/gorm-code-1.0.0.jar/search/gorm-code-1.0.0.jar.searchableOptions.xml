@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<options>
+  <configurable id="preferences.keymap" configurable_name="Keymap">
+    <option name="generate" path="ActionManager" hit="Generate Model" />
+    <option name="model" path="ActionManager" hit="Generate Model" />
+    <option name="generate" path="ActionManager" hit="Generate golang model" />
+    <option name="golang" path="ActionManager" hit="Generate golang model" />
+    <option name="model" path="ActionManager" hit="Generate golang model" />
+  </configurable>
+</options>
+
